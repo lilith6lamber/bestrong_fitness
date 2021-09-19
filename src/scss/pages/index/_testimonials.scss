@@ -1,0 +1,166 @@
+.testimonials {
+    padding-top: calc(126px / 2);
+    padding-bottom: calc(94px / 2);
+    overflow: hidden;
+    position: relative;
+    &_title {
+        margin-bottom: 90px;
+    }
+    &_slider {
+        color: #fff;
+        &-slide {
+            .review {
+                max-width: 804px;
+                margin: 0 auto;
+                text-align: center;
+                font-weight: $book;
+                color: #c5c5c5;
+                font-size: 18px;
+                line-height: 22px;
+            }
+            .author {
+                margin: 30px auto;
+                .avatar {
+                    width: 55px;
+                    border-radius: 50%;
+                    border: 2px solid $sky;
+                    margin-bottom: 15px;
+                }
+                span {
+                    font-size: 14px;
+                    opacity: 0.8;
+                    &.name {
+                        font-size: 16px;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        &-controls {
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            width: 100%;
+            margin-bottom: 100px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 0 15px;
+            .slider-control {
+                border-radius: 50%;
+                width: 25px;
+                height: 25px;
+                background: $sky;
+                font-size: 18px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid transparent;
+                &:hover,
+                &:focus {
+                    background: transparent;
+                    color: $sky;
+                    border-color: $sky;
+                }
+            }
+        }
+    }
+    .tns-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 94px;
+        button {
+            background: $sky;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            margin-right: 8px;
+            &:last-of-type {
+                margin-right: 0;
+            }
+            &.tns-nav-active {
+                width: 8px;
+                height: 8px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 575.98px) {
+    .testimonials {
+        &_slider {
+            &-controls {
+                margin-bottom: 200px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    .testimonials {
+        &_slider {
+            &-controls {
+                padding: 0 50px;
+                margin-bottom: 200px;
+                .slider-control {
+                    width: 50px;
+                    height: 50px;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .testimonials {
+        padding-top: 126px;
+        padding-bottom: 94px;
+        &_slider {
+            &-slide {
+                .review {
+                    font-size: 26px;
+                    line-height: 30px;
+                }
+                .author {
+                    .avatar {
+                        width: 110px;
+                        height: 110px;
+                    }
+                    span {
+                        font-size: 16px;
+                        &.name {
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+            &-controls {
+                padding: 0 100px;
+                margin-bottom: 200px;
+                .slider-control {
+                    width: 50px;
+                    height: 50px;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1199.98px) {
+    .testimonials {
+        &_slider {
+            &-controls {
+                max-width: 1200px;
+                padding: 0;
+                margin: 0 auto;
+                top: 50%;
+                transform: translateY(-50%);
+                align-items: center;
+            }
+        }
+    }
+}

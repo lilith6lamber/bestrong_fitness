@@ -1,0 +1,93 @@
+.news {
+    padding-top: calc(177px / 2);
+    padding-bottom: calc(282px / 2);
+    &_feed {
+        margin: 81px auto 72px;
+        max-width: calc(390px * 3 + 60px);
+        &-item {
+            max-width: 390px;
+            .wrapper {
+                height: 100%;
+                background: #13191a;
+                padding: 30px 30px 40px;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: justify;
+                font-size: 14px;
+                line-height: 24px;
+                color: $gray;
+            }
+            &_text {
+                flex-grow: 2;
+                .title {
+                    color: $sky;
+                    margin: 32px 0 25px;
+                    font-size: 20px;
+                    line-height: 30px;
+                    font-family: "Raleway";
+                    text-align: left;
+                    &:hover,
+                    &:focus {
+                        color: #fff;
+                    }
+                }
+                .preview {
+                    margin-bottom: 33px;
+                    word-break: break-all;
+                }
+                .author {
+                    margin-right: 25px;
+                }
+                .icon {
+                    color: $sky;
+                    font-size: 16px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    &_btn {
+        max-width: 300px;
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    .news {
+        &_feed {
+            &-item {
+                .wrapper {
+                    padding: 15px;
+                    line-height: 18px;
+                }
+                &_text {
+                    .title {
+                        margin: 10px 0;
+                        font-size: 16px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .news {
+        padding-top: 177px;
+        padding-bottom: 282px;
+        &_feed {
+            &-item {
+                .wrapper {
+                    padding: 30px 30px 40px;
+                    line-height: 24px;
+                }
+                &_text {
+                    .title {
+                        margin: 32px 0 25px;
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

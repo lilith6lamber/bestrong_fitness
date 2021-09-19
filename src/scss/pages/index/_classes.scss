@@ -1,0 +1,185 @@
+.classes {
+    padding-top: calc(118px / 2);
+    &_subtitle {
+        margin: 22px auto 62px;
+        opacity: .8;
+        color: #fff;
+    }
+    &_list {
+        &-item {
+            position: relative;
+            text-align: center;
+            color: #fff;
+            cursor: pointer;
+            overflow: hidden;
+            img {
+                height: 100%;
+            }
+            &:hover,
+            &:focus {
+                .label {
+                    bottom: -100%;
+                }
+                .overlay {
+                    opacity: 1;
+                }
+            }
+            .overlay {
+                border-radius: 10px;
+                background: rgba($sky, 0.8);
+                opacity: 0;
+                transition: opacity 0.7s ease-out;
+                padding: 40px 15px 30px;
+                max-width: 555px;
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                backdrop-filter: blur(5px);
+                &_title {
+                    font-weight: $book;
+                    font-size: 22px;
+                    line-height: 22px;
+                    position: relative;
+                    padding-bottom: 10px;
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        width: 25%;
+                        height: 2px;
+                        background: #fff;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+                &_description {
+                    margin: 10px auto;
+                    font-size: 16px;
+                    max-width: 435px;
+                }
+                &_btn {
+                    max-width: 200px;
+                    margin: 0 auto;
+                    background: #fff;
+                    border-radius: 25px;
+                    color: $carbon;
+                    padding: 10px 0;
+                    &:hover,
+                    &:focus {
+                        background: $carbon;
+                        color: $sky;
+                        filter: drop-shadow(0 0 5px $carbon);
+                    }
+                }
+            }
+            .label {
+                bottom: 0;
+                right: 0;
+                padding: 20px 0;
+                background: rgba($carbon, 0.6);
+                transition: bottom 0.8s linear;
+                font-weight: $book;
+            }
+            .overlay,
+            .label {
+                position: absolute;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 575.98px) {
+    .classes {
+        &_list {
+            &-item {
+                .overlay {
+                    &_title {
+                        font-size: 30px;
+                        line-height: 30px;
+                        &:after {
+                            width: 50%;
+                        }
+                    }
+                    &_description {
+                        margin: 30px auto;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 575.98px) {
+    .classes {
+        &_list {
+            &-item {
+                .label {
+                    font-size: 20px;
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .classes {
+        padding-top: 118px;
+        &_list {
+            &-item {
+                .overlay {
+                    max-width: 300px;
+                    &_title {
+                        font-size: 22px;
+                        line-height: 22px;
+                        &:after {
+                            width: 50%;
+                        }
+                    }
+                    &_description {
+                        margin: 10px auto;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1199.98px) {
+    .classes {
+        &_list {
+            &-item {
+                .overlay {
+                    max-width: 350px;
+                    &_description {
+                        margin: 15px auto;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1399.98px) {
+    .classes {
+        &_list {
+            &-item {
+                .overlay {
+                    max-width: 400px;
+                    &_title {
+                        font-size: 32px;
+                        line-height: 32px;
+                    }
+                    &_description {
+                        margin: 30px auto;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

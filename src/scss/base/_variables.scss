@@ -1,0 +1,138 @@
+$sky: #5eb6e1;
+$carbon: #24272e;
+$dark-bg: #19191c;
+$gray: #bbb;
+$orange: #ff6c2c;
+
+$light: 100;
+$book: 200;
+$demi: 500;
+
+.dark-bg {
+    background: $dark-bg;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: #13191a;
+    transition: 0.5s;
+    .blue {
+        color: $sky;
+    }
+    svg#logo {
+        margin-right: 4px;
+    }
+    &:hover,
+    &:focus {
+        color: $sky;
+        .blue {
+            color: #13191a;
+        }
+    }
+    &--invert {
+        color: #fff;
+        svg#logo {
+            .recolor {
+                fill: #fff;
+            }
+        }
+        &:hover,
+        &:focus {
+            color: $sky;
+            .blue {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.section-title {
+    font-weight: 400;
+    font-size: 30px;
+    padding-bottom: 17px;
+    position: relative;
+    text-align: center;
+    text-transform: capitalize;
+    &:after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 64px;
+        background: $sky;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &--left {
+        text-align: left;
+        &::after {
+            left: 0;
+            transform: none;
+        }
+    }
+    &--white {
+        color: #fff;
+    }
+    &--black {
+        color: #292f39;
+    }
+}
+
+.section-subtitle {
+    text-align: center;
+    max-width: 1107px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+@media screen and (min-width: 991.98px) {
+    .section {
+        &-title {
+            font-size: 40px;
+            line-height: 50px;
+            &:after {
+                width: 128px;
+            }
+        }
+        &-subtitle {
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+}
+
+@media screen and (min-width: 1399.98px) {
+    .section {
+        &-title {
+            font-size: 60px;
+            line-height: 70px;
+            &:after {
+                width: 128px;
+            }
+        }
+        &-subtitle {
+            font-size: 30px;
+            line-height: 45px;
+        }
+    }
+}
+
+.sky-btn {
+    background: $sky;
+    border-radius: 10px;
+    padding: 16px 0;
+    border: 2px solid transparent;
+    text-align: center;
+    font-size: 20px;
+    text-transform: capitalize;
+    &:hover,
+    &:focus {
+        border-color: $sky;
+        color: $sky;
+        background: transparent;
+        box-shadow: 1px 0px 10px 1px rgba($sky, 0.5);
+    }
+}

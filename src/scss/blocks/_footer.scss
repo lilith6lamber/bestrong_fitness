@@ -1,0 +1,163 @@
+.footer {
+    .main {
+        padding-top: calc(122px / 2);
+        padding-bottom: calc(175px / 2);
+    }
+    .brand {
+        margin-bottom: 30px;
+        width: 100%;
+        justify-content: center;
+    }
+    .title {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 45px;
+        margin-bottom: 35px;
+        text-align: center;
+    }
+    &_contacts {
+        &-content {
+            color: #bcbcbc;
+            .address {
+                font-weight: $book;
+                max-width: 242px;
+                margin: 0 auto;
+                font-size: 25px;
+                line-height: 30px;
+                margin-bottom: 15px;
+            }
+            a {
+                .icon {
+                    color: $sky;
+                    font-size: 16px;
+                    margin-right: 13px;
+                    transition: 0.2s;
+                }
+                &.link--contact:hover,
+                &.link--contact:focus {
+                    color: #fff;
+                    .icon {
+                        text-shadow: 0px 0px 4px rgba($sky, 1);
+                    }
+                }
+            }
+            .socials {
+                margin-top: 30px;
+                margin-bottom: 30px;
+                &-item {
+                    margin-right: 21px;
+                    &:last-of-type {
+                        margin-right: 0;
+                    }
+                    .link {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 34px;
+                        height: 34px;
+                        background: $sky;
+                        color: #fff;
+                        border: 2px solid transparent;
+                        transition: 0.5s;
+                        &:hover,
+                        &:focus {
+                            color: $sky;
+                            border-color: $sky;
+                            background: transparent;
+                            filter: drop-shadow(0 0 10px $sky);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &_tags {
+        &-wrapper {
+            .tag {
+                padding: 12px 15px;
+                border: 1px solid #979797;
+                margin: 3px;
+                color: $gray;
+                font-size: 14px;
+                text-transform: uppercase;
+                font-weight: $book;
+                transition: 0.5s ease-in-out;
+                &:hover,
+                &:focus {
+                    color: #fff;
+                    background: $sky;
+                    border-color: $sky;
+                }
+            }
+        }
+    }
+    &_nav {
+        background: $sky;
+        padding: 15px 0;
+        letter-spacing: -1px;
+        font-size: 20px;
+        &-list {
+            justify-content: space-between;
+            align-items: center;
+            font-weight: $demi;
+            font-size: 18px;
+            a:hover,
+            a:focus {
+                color: #fff;
+            }
+        }
+    }
+    &_copyright {
+        background: $carbon;
+        padding: 30px 0;
+        text-align: center;
+        color: rgba(#f6f7fb, 0.6);
+        font-weight: $light;
+        letter-spacing: 0.85px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    .footer {
+        .main {
+            padding-top: 122px;
+            padding-bottom: 175px;
+        }
+        .brand {
+            margin-bottom: 60px;
+        }
+        &_nav {
+            &-list {
+                justify-content: center;
+                font-size: 20px;
+                &_item {
+                    margin-right: 87px;
+                    &:last-of-type {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .footer {
+        .brand {
+            margin-bottom: 30px;
+            width: auto;
+            margin-top: auto;
+        }
+        .title {
+            text-align: left;
+        }
+        &_contacts-content .socials {
+            margin-bottom: 0;
+        }
+        &_tags {
+            max-width: 344px;
+        }
+    }
+}

@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    scrollbar-width: thin;
+    scrollbar-color: $sky $carbon;
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+    &::-webkit-scrollbar-track {
+        background: $carbon;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $sky;
+        border-radius: 5px;
+        border: 0px solid transparent;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: #fff;
+    color: #333;
+    font-family: "FuturaPT", sans-serif;
+    visibility: hidden;
+    &.swal2-shown {
+        padding: 0 !important;
+    }
+    &.visible {
+        visibility: visible;
+    }
+}
+body,
+html {
+    overflow-x: hidden;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+button {
+    cursor: pointer;
+}
+a,
+button,
+input,
+input::placeholder,
+textarea,
+textarea::placeholder {
+    transition: 0.3s;
+}
+button,
+input {
+    background: transparent;
+    border: none;
+}
+textarea {
+    resize: none;
+}
+ul {
+    list-style: none;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+img,
+span,
+a {
+    display: block;
+}

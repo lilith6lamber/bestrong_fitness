@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+@@include('components/_head.html',{
+"lang":"en",
+"title":"Bestrong | Fitness for Women"})
+
+<body>
+    @@include('components/_loader.html')
+    @@include('components/_header.html')
+    <main id="home">
+        <section class="hero">
+            <ul class="hero_socials d-flex flex-column wow fadeInLeft">
+                <li class="hero_socials-link d-inline-flex justify-content-center align-items-center">
+                    <a href="index.html">
+                        <i class="icon-earth"></i>
+                    </a>
+                </li>
+                <li class="hero_socials-link d-inline-flex justify-content-center align-items-center">
+                    <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="icon-facebook"></i>
+                    </a>
+                </li>
+                <li class="hero_socials-link d-inline-flex justify-content-center align-items-center">
+                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="icon-twitter"></i>
+                    </a>
+                </li>
+                <li class="hero_socials-link d-inline-flex justify-content-center align-items-center">
+                    <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="icon-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="container">
+                <div class="wrapper col-12 col-md-7 col-xxl-8">
+                    <p class="hero_subtitle wow fadeInDown">Practice hard. Play strong.</p>
+                    <h1 class="hero_title wow fadeInUp">Solutions for moving better and feeling althier.</h1>
+                    <a class="sky-btn hero_btn" href="javascript:void(0)">Get Started</a>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <div class="container">
+                <ul class="about_pricing row g-1 g-md-2 g-lg-4 justify-content-center">
+                    <li class="about_pricing-item col-12 col-md-4 wow fadeInUp">
+                        <div class="wrapper d-flex flex-column align-items-center justify-content-end">
+                            <div class="overlay"></div>
+                            <picture>
+                                <source type="image/webp" srcset="img/bg/classic--sm.webp 1200w, 
+                                    img/bg/classic--lg.webp 1400w" data-srcset="img/bg/classic--sm.webp 1200w, 
+                                    img/bg/classic--lg.webp 1400w" data-sizes="100w" />
+                                <img class="about_pricing-item_img lazy" src="img/bg/classic--lg.jpg" srcset="img/bg/classic--sm.jpg 1200w,
+                                    img/bg/classic--lg.jpg 1400w" data-srcset="img/bg/classic--sm.jpg 1200w,
+                                    img/bg/classic--lg.jpg 1400w" alt="Body Building With Classic" data-sizes="100w">
+                            </picture>
+                            <div class="about_pricing-item_text">
+                                <h4 class="title">Body Building With Classic</h4>
+                                <p class="subtitle">Trained Achieve Your Goals</p>
+                                <div class="button-container button-flip3d-vertical2">
+                                    <div class="flipper flipper-flip3d-vertical2 orange">
+                                        <div class="button front">
+                                            $60*/M
+                                        </div>
+                                        <div class="button button-3d back">
+                                            Join
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="about_pricing-item col-12 col-md-4 wow fadeInUp">
+                        <div class="wrapper d-flex flex-column align-items-center justify-content-end">
+                            <div class="overlay"></div>
+                            <picture>
+                                <source type="image/webp"
+                                    srcset="img/bg/standard--sm.webp 1200w, img/bg/standard--lg.webp 1400w"
+                                    data-srcset="img/bg/standard--sm.webp 1200w, img/bg/standard--lg.webp 1400w"
+                                    data-sizes="100w" />
+                                <img class="about_pricing-item_img lazy" src="img/bg/standard--lg.jpg" srcset="img/bg/standard--sm.jpg 1200w,
+                                    img/bg/standard--lg.jpg 1400w" data-srcset="img/bg/standard--sm.jpg 1200w,
+                                    img/bg/standard--lg.jpg 1400w" alt="Body Building With Standard" data-sizes="100w">
+                            </picture>
+                            <div class="about_pricing-item_text">
+                                <h4 class="title">Body Building With Standard</h4>
+                                <p class="subtitle">Trained under best trainers</p>
+                                <div class="button-container button-flip3d-vertical2">
+                                    <div class="flipper flipper-flip3d-vertical2 violet">
+                                        <div class="button front">
+                                            $120*/M
+                                        </div>
+                                        <div class="button button-3d back">
+                                            Join
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="about_pricing-item col-12 col-md-4 wow fadeInUp">
+                        <div class="wrapper d-flex flex-column align-items-center justify-content-end">
+                            <div class="overlay"></div>
+                            <picture>
+                                <source type="image/webp" srcset="img/bg/premium--sm.webp 1200w, 
+                                    img/bg/premium--lg.webp 1400w" data-srcset="img/bg/premium--sm.webp 1200w, 
+                                    img/bg/premium--lg.webp 1400w" data-sizes="100w" />
+                                <img class="about_pricing-item_img lazy" src="img/bg/premium--lg.jpg" srcset="img/bg/premium--sm.jpg 1200w,
+                                    img/bg/premium--lg.jpg 1400w" data-srcset="img/bg/premium--sm.jpg 1200w,
+                                    img/bg/premium--lg.jpg 1400w" alt="Body Building With Premium" data-sizes="100w">
+                            </picture>
+                            <div class="about_pricing-item_text">
+                                <h4 class="title">Body Building With Premium</h4>
+                                <p class="subtitle">Trained Day and Night</p>
+                                <div class="button-container button-flip3d-vertical2">
+                                    <div class="flipper flipper-flip3d-vertical2 sky">
+                                        <div class="button front">
+                                            $200*/M
+                                        </div>
+                                        <div class="button button-3d back">
+                                            Join
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="about_main row justify-content-between align-items-center">
+                    <div class="about_main-info col-12 col-md-6 col-lg-5">
+                        <span class="title-deco">About us</span>
+                        <h2 class="title section-title section-title--left">Welcome to Bestrong</h2>
+                        <p class="highlight">From the moment you walk through the door you know Gym base is a unique
+                            place.</p>
+                        <p class="text">
+                            If you run a fitness gym, this is one
+                            slogan that can bring customers in. No one likes having to drive miles out of their way to
+                            go to the gym. It is always
+                            easier to have a gym that is actually close to home. Your body hears everything that your
+                            mind says.
+                        </p>
+                        <a class="btn sky-btn" href="javascript:void(0)">Read More</a>
+                    </div>
+                    <div class="about_main-media col-12 col-md-6 offset-lg-1">
+                        <div class="about_main-media_gallery row g-1 g-lg-3 justify-content-between align-items-center">
+                            <div class="wrapper col-12 col-sm-6">
+                                <picture>
+                                    <source srcset="img/gallery/gallery_1.webp" data-srcset="img/gallery/gallery_1.webp"
+                                        type="image/webp">
+                                    <img class="lazy " src="img/gallery/gallery_1.jpg"
+                                        data-src="img/gallery/gallery_1.jpg" alt="media">
+                                </picture>
+                            </div>
+                            <div class="wrapper col-12 col-sm-6">
+                                <picture>
+                                    <source srcset="img/gallery/gallery_2.webp" data-srcset="img/gallery/gallery_2.webp"
+                                        type="image/webp">
+                                    <img class="lazy mb-1 mb-lg-3" src="img/gallery/gallery_2.jpg"
+                                        data-src="img/gallery/gallery_2.jpg" alt="media">
+                                </picture>
+                                <picture>
+                                    <source srcset="img/gallery/gallery_3.webp" data-srcset="img/gallery/gallery_3.webp"
+                                        type="image/webp">
+                                    <img class="lazy" src="img/gallery/gallery_3.jpg"
+                                        data-src="img/gallery/gallery_3.jpg" alt="media">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="classes" class="classes dark-bg">
+            <div class="container">
+                <h2 class="classes_title section-title section-title--white">Our Classes</h2>
+                <p class="classes_subtitle section-subtitle">If you run a fitness gym, this is one slogan that can bring
+                    customers in. No
+                    one likes having to drive miles out of
+                    their way to go to the gym. It is always easier to have a gym that is actually close to home. Your
+                    body hears everything
+                    that your mind says.</p>
+            </div>
+            <div class="container-fluid p-0">
+                <ul class="classes_list d-flex flex-wrap">
+                    <li class="classes_list-item col-12 col-md-6 col-lg-4" tabindex="0">
+                        <div class="overlay">
+                            <h4 class="overlay_title">Cardio Fitness</h4>
+                            <p class="overlay_description">
+                                If you run a fitness gym, this is one slogan that can bring customers in. No one likes
+                                having to drive miles out of
+                                their way to go to the gym.
+                            </p>
+                            <a class="overlay_btn" href="javascript:void(0)" target="_blank"
+                                rel="noopener noreferrer">Read More</a>
+                        </div>
+                        <picture>
+                            <source srcset="img/cardio.webp" data-srcset="img/cardio.webp" type="image/webp">
+                            <img class="lazy" src="img/cardio.jpg" data-src="img/cardio.jpg" alt="Cardio Fitness">
+                        </picture>
+                        <span class="label">Cardio Fitness</span>
+                    </li>
+                    <li class="classes_list-item col-12 col-md-6 col-lg-4" tabindex="0">
+                        <div class="overlay">
+                            <h4 class="overlay_title">Advanced Gymnastic</h4>
+                            <p class="overlay_description">
+                                If you run a fitness gym, this is one slogan that can bring customers in. No one likes
+                                having to drive miles out of
+                                their way to go to the gym.
+                            </p>
+                            <a class="overlay_btn" href="javascript:void(0)" target="_blank"
+                                rel="noopener noreferrer">Read More</a>
+                        </div>
+                        <picture>
+                            <source srcset="img/advanced.webp" data-srcset="img/advanced.webp" type="image/webp">
+                            <img class="lazy" src="img/advanced.jpg" data-src="img/advanced.jpg"
+                                alt="Advanced Gymnastic">
+                        </picture>
+                        <span class="label">Advanced Gymnastic</span>
+                    </li>
+                    <li class="classes_list-item col-12 col-md-6 col-lg-4" tabindex="0">
+                        <div class="overlay">
+                            <h4 class="overlay_title">Cycle Training</h4>
+                            <p class="overlay_description">
+                                If you run a fitness gym, this is one slogan that can bring customers in. No one likes
+                                having to drive miles out of
+                                their way to go to the gym.
+                            </p>
+                            <a class="overlay_btn" href="javascript:void(0)" target="_blank"
+                                rel="noopener noreferrer">Read More</a>
+                        </div>
+                        <picture>
+                            <source srcset="img/cycle.webp" data-srcset="img/cycle.webp" type="image/webp">
+                            <img class="lazy" src="img/cycle.jpg" data-src="img/cycle.jpg" alt="Cycle Training">
+                        </picture>
+                        <span class="label">Cycle Training</span>
+                    </li>
+                    <li class="classes_list-item col-12 col-md-6 col-lg-4" tabindex="0">
+                        <div class="overlay">
+                            <h4 class="overlay_title">Body Attack</h4>
+                            <p class="overlay_description">
+                                If you run a fitness gym, this is one slogan that can bring customers in. No one likes
+                                having to drive miles out of
+                                their way to go to the gym.
+                            </p>
+                            <a class="overlay_btn" href="javascript:void(0)" target="_blank"
+                                rel="noopener noreferrer">Read More</a>
+                        </div>
+                        <picture>
+                            <source srcset="img/attack.webp" data-srcset="img/attack.webp" type="image/webp">
+                            <img class="lazy" src="img/attack.jpg" data-src="img/attack.jpg" alt="Body Attack">
+                        </picture>
+                        <span class="label">Body Attack</span>
+                    </li>
+                    <li class="classes_list-item col-12 col-md-6 col-lg-4" tabindex="0">
+                        <div class="overlay">
+                            <h4 class="overlay_title">Yoga Pilates</h4>
+                            <p class="overlay_description">
+                                If you run a fitness gym, this is one slogan that can bring customers in. No one likes
+                                having to drive miles out of
+                                their way to go to the gym.
+                            </p>
+                            <a class="overlay_btn" href="javascript:void(0)" target="_blank"
+                                rel="noopener noreferrer">Read More</a>
+                        </div>
+                        <picture>
+                            <source srcset="img/yoga.webp" data-srcset="img/yoga.webp" type="image/webp">
+                            <img class="lazy" src="img/yoga.jpg" data-src="img/yoga.jpg" alt="Yoga Pilates">
+                        </picture>
+                        <span class="label">Yoga Pilates</span>
+                    </li>
+                    <li class="classes_list-item col-12 col-md-6 col-lg-4" tabindex="0">
+                        <div class="overlay">
+                            <h4 class="overlay_title">Weight Lifting</h4>
+                            <p class="overlay_description">
+                                If you run a fitness gym, this is one slogan that can bring customers in. No one likes
+                                having to drive miles out of
+                                their way to go to the gym.
+                            </p>
+                            <a class="overlay_btn" href="javascript:void(0)" target="_blank"
+                                rel="noopener noreferrer">Read More</a>
+                        </div>
+                        <picture>
+                            <source srcset="img/lifting.webp" data-srcset="img/lifting.webp" type="image/webp">
+                            <img class="lazy" src="img/lifting.jpg" data-src="img/lifting.jpg" alt="Weight Lifting">
+                        </picture>
+                        <span class="label">Weight Lifting</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="team">
+            <div class="container">
+                <h2 class="team_title section-title">Meet Our Team</h2>
+                <p class="team_subtitle section-subtitle">If you run a fitness gym, this is one slogan that can bring
+                    customers in. No
+                    one likes having to drive miles out of
+                    their way to go to the gym. It is always easier to have a gym that is actually close to home. Your
+                    body hears everything
+                    that your mind says.</p>
+                <ul class="team_list row g-4">
+                    <li class="team_list-item d-flex flex-column col-12 col-md-4 wow fadeInUp">
+                        <div class="wrapper d-flex flex-column">
+                            <picture>
+                                <source srcset="img/emma.webp" data-srcset="img/emma.webp" type="image/webp">
+                                <img class="lazy portrait" src="img/emma.jpg" data-src="img/emma.jpg"
+                                    alt="Emma Higgins">
+                            </picture>
+                            <div class="text-content d-flex flex-column justify-content-between">
+                                <span class="name">Emma Higgins</span>
+                                <span class="speciality">Body Bulding</span>
+                                <ul
+                                    class="team_list-item_socials d-flex flex-wrap align-items-center justify-content-center">
+                                    <li class="list-item">
+                                        <a class="facebook" href="https://facebook.com/" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <i class="icon-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="twitter" href="https://twitter.com/" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <i class="icon-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="instagram" href="https://instagram.com/" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <i class="icon-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="team_list-item d-flex flex-column col-12 col-md-4 wow fadeInUp">
+                        <div class="wrapper d-flex flex-column">
+                            <picture>
+                                <source srcset="img/katherine.webp" data-srcset="img/katherine.webp" type="image/webp">
+                                <img class="lazy portrait" src="img/katherine.jpg" data-src="img/katherine.jpg"
+                                    alt="Katherine Robinson">
+                            </picture>
+                            <div class="text-content d-flex flex-column justify-content-between">
+                                <span class="name">Katherine Robinson</span>
+                                <span class="speciality">Fitness Coach</span>
+                                <ul
+                                    class="team_list-item_socials d-flex flex-wrap align-items-center justify-content-center">
+                                    <li class="list-item">
+                                        <a class="facebook" href="https://facebook.com/" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <i class="icon-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="twitter" href="https://twitter.com/" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <i class="icon-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="instagram" href="https://instagram.com/" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <i class="icon-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="team_list-item d-flex flex-column col-12 col-md-4 wow fadeInUp">
+                        <div class="wrapper d-flex flex-column">
+                            <picture>
+                                <source srcset="img/skye.webp" data-srcset="img/skye.webp" type="image/webp">
+                                <img class="lazy portrait" src="img/skye.jpg" data-src="img/skye.jpg"
+                                    alt="Skye Sorenson">
+                            </picture>
+                            <div class="text-content d-flex flex-column justify-content-between">
+                                <span class="name">Skye Sorenson</span>
+                                <span class="speciality">Personal Trainer</span>
+                                <ul
+                                    class="team_list-item_socials d-flex flex-wrap align-items-center justify-content-center">
+                                    <li class="list-item">
+                                        <a class="facebook" href="https://facebook.com/" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <i class="icon-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="twitter" href="https://twitter.com/" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <i class="icon-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="instagram" href="https://instagram.com/" target="_blank"
+                                            rel="noopener noreferrer">
+                                            <i class="icon-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <a class="team_btn sky-btn m-auto" href="javascript:void(0)">See the whole team</a>
+            </div>
+        </section>
+        <section class="testimonials dark-bg">
+            <div class="container">
+                <h2 class="testimonials_title section-title section-title--white">Testimonials</h2>
+                <ul class="testimonials_slider">
+                    <li class="testimonials_slider-slide">
+                        <p class="review">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore
+                            magna aliquyam erat, sed diam voluptua. At vero.
+                        </p>
+                        <div class="author d-flex flex-column align-items-center">
+                            <picture>
+                                <source srcset="img/review_avatar-1.webp" data-srcset="img/review_avatar-1.webp"
+                                    type="image/webp">
+                                <img class="lazy avatar" src="img/review_avatar-1.jpg"
+                                    data-src="img/review_avatar-1.jpg" alt="Kendall Elsayed">
+                            </picture>
+                            <span class="name">Kendall Elsayed</span>
+                            <span>Our Client</span>
+                        </div>
+                    </li>
+                    <li class="testimonials_slider-slide">
+                        <p class="review">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero. orem ipsum
+                            dolor sit amet consectetur adipisicing elit. Cum blanditiis recusandae similique.
+                        </p>
+                        <div class="author d-flex flex-column align-items-center">
+                            <picture>
+                                <source srcset="img/review_avatar-2.webp" data-srcset="img/review_avatar-2.webp"
+                                    type="image/webp">
+                                <img class="lazy avatar" src="img/review_avatar-2.jpg"
+                                    data-src="img/review_avatar-2.jpg" alt="Lisa Smith">
+                            </picture>
+                            <span class="name">Lisa Smith</span>
+                            <span>Our Client</span>
+                        </div>
+                    </li>
+                    <li class="testimonials_slider-slide">
+                        <p class="review">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et
+                            dolore
+                            magna aliquyam erat, sed diam voluptua. At vero.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum blanditiis recusandae similique
+                            laudantium molestias dolore. Laudantium consectetur accusantium dolor deleniti repellendus?
+                            In ex placeat quidem labore veniam maxime, consequatur laudantium?
+                        </p>
+                        <div class="author d-flex flex-column align-items-center">
+                            <picture>
+                                <source srcset="img/review_avatar-3.webp" data-srcset="img/review_avatar-3.webp"
+                                    type="image/webp">
+                                <img class="lazy avatar" src="img/review_avatar-3.jpg"
+                                    data-src="img/review_avatar-3.jpg" alt="Rosemary Farell">
+                            </picture>
+                            <span class="name">Rosemary Farell</span>
+                            <span>Our Client</span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="testimonials_slider-controls">
+                    <a class="slider-control slider-control--prev" href="javascript:void(0)">
+                        <i class="icon-angle-left"></i>
+                    </a>
+                    <a class="slider-control slider-control--next" href="javascript:void(0)">
+                        <i class="icon-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="news" class="news">
+            <div class="container">
+                <h2 class="news_title section-title section-title--black">Recent News</h2>
+                <ul class="news_feed row g-1 g-lg-3 justify-content-center">
+                    <li class="news_feed-item col-12 col-md-4 wow fadeInUp">
+                        <div class="wrapper d-flex flex-column">
+                            <picture>
+                                <source type="image/webp" data-srcset="img/news_1.webp" />
+                                <img class="lazy news_feed-item_img"
+                                    alt="This Harvard Student Ran 70 Miles Back to College" data-src="img/news_1.jpg" />
+                            </picture>
+                            <div class="news_feed-item_text d-flex flex-column justify-content-between">
+                                <a class="title" href="javascipt:void(0)" target="_blank" rel="noopener noreferrer">This
+                                    Harvard Student Ran 70 Miles Back to College</a>
+                                <p class="preview">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                    officia
+                                    deserunt mollit anim id est eopksio laborum.
+                                    Sed ut perspiciatis.</p>
+                                <div class="info d-flex">
+                                    <span class="author d-flex align-items-center">
+                                        <i class="icon-user icon"></i> Jane Doe
+                                    </span>
+                                    <span class="date d-flex align-items-center">
+                                        <i class="icon-clock icon"></i> 1h ago
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="news_feed-item col-12 col-md-4 wow fadeInUp">
+                        <div class="wrapper d-flex flex-column">
+                            <picture>
+                                <source type="image/webp" data-srcset="img/news_2.webp" />
+                                <img class="lazy news_feed-item_img"
+                                    alt="Female Boxers Describe What It’s Like to Take a Punch"
+                                    data-src="img/news_2.jpg" />
+                            </picture>
+                            <div class="news_feed-item_text d-flex flex-column justify-content-between">
+                                <a class="title" href="javascipt:void(0)" target="_blank"
+                                    rel="noopener noreferrer">Female
+                                    Boxers Describe What It’s Like to Take a Punch</a>
+                                <p class="preview">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                    officia
+                                    deserunt mollit anim id est eopksio laborum. Excepteur sint occaecat cupidatat non
+                                    proident.
+                                    Sed ut perspiciatis.</p>
+                                <div class="info d-flex">
+                                    <span class="author d-flex align-items-center">
+                                        <i class="icon-user icon"></i> Jane Doe
+                                    </span>
+                                    <span class="date d-flex align-items-center">
+                                        <i class="icon-clock icon"></i> 1h ago
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="news_feed-item col-12 col-md-4 wow fadeInUp">
+                        <div class="wrapper d-flex flex-column">
+                            <picture>
+                                <source type="image/webp" data-srcset="img/news_3.webp" />
+                                <img class="lazy news_feed-item_img"
+                                    alt="21 Top Fitness Blogs You Should Follow in 2021" data-src="img/news_3.jpg" />
+                            </picture>
+                            <div class="news_feed-item_text d-flex flex-column justify-content-between">
+                                <a class="title" href="javascipt:void(0)" target="_blank" rel="noopener noreferrer">21
+                                    Top
+                                    Fitness Blogs You Should Follow in 2021</a>
+                                <p class="preview">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                    officia
+                                    deserunt mollit anim id est eopksio laborum.
+                                    Sed ut perspiciatis.</p>
+                                <div class="info d-flex">
+                                    <span class="author d-flex align-items-center">
+                                        <i class="icon-user icon"></i> Jane Doe
+                                    </span>
+                                    <span class="date d-flex align-items-center">
+                                        <i class="icon-clock icon"></i> 1h ago
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <a class="news_btn sky-btn m-auto" href="javascript:void(0)">See More News</a>
+            </div>
+        </section>
+        <section id="contacts" class="contacts">
+            <div class="container">
+                <div class="contacts_content col-12 col-md-6">
+                    <div class="container">
+                        <h2 class="contacts_content-title section-title section-title--white section-title--left">
+                            Contact Us</h2>
+                        <form class="contacts_content-form" action="POST">
+                            <select class="contacts_content-form_field" name="messageSubject" id="messageSubject">
+                                <option value="default">Subject</option>
+                                <option value="plans">Plans and pricing</option>
+                                <option value="customerCare">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <input class="contacts_content-form_field" type="text" name="messageEmail" id="messageEmail"
+                                placeholder="Email">
+                            <textarea class="contacts_content-form_field" name="messageText" id="messageText"
+                                placeholder="Write Your Message Here..."></textarea>
+                            <button class="contacts_content-form_btn sky-btn" type="submit">Submit</button>
+                        </form>
+                        <div class="contacts_content-contacts">
+                            <div class="contacts_content-contacts_info">
+                                <div
+                                    class="wrapper d-flex justify-content-between justify-content-lg-start align-items-center">
+                                    <a class="link link--mail" href="mailto:email@example.com">email@example.com</a>
+                                    <span class="separator"></span>
+                                    <a class="link link--tel" href="tel:+00201066269735">+002-010-66269735</a>
+                                </div>
+                            </div>
+                            <ul
+                                class="contacts_content-contacts_socials d-flex justify-content-center justify-content-md-start">
+                                <li class="list-item">
+                                    <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">
+                                        <i class="icon-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+                                        <i class="icon-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li class="list-item">
+                                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                                        <i class="icon-twitter"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <picture>
+                <source type="image/webp" data-srcset="img/contact-media--mobile.webp 576w,
+                                        img/contact-media--tablet.webp 768w,
+                                        img/contact-media.webp 1200w" srcset="img/contact-media--mobile.webp 576w,
+                                        img/contact-media--tablet.webp 768w,
+                                        img/contact-media.webp 1200w" data-sizes="100w" />
+                <img class="lazy contacts_media col-12 col-md-5" alt="media" data-src="img/contact-media.jpg"
+                    src="img/contact-media.jpg" data-srcset="lazy_400.jpg 400w, 
+                                        lazy_800.jpg 800w" srcset="lazy_400.jpg 400w, 
+                                        lazy_800.jpg 800w" data-sizes="100w" />
+            </picture>
+        </section>
+    </main>
+    @@include('components/_footer.html')
+    <script src="js/index.js"></script>
+</body>
+
+</html>

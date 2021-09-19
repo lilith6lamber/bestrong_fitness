@@ -1,0 +1,57 @@
+.button-container {
+    display: inline-block;
+    cursor: pointer;
+    -webkit-perspective: 1000;
+    -ms-perspective: 1000;
+    perspective: 1000;
+
+    .flipper {
+        transition: all 0.5s ease-in-out;
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        position: relative;
+    }
+
+    .button {
+        backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &.front {
+            z-index: 10;
+        }
+
+        &.back {
+            color: white;
+            font-size: 15px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+.button-flip3d-vertical2 {
+/*     .flipper-flip3d-vertical2 {
+        transform-origin: 100% 22.5px;
+    }
+
+    .front {
+        transform: translateZ(22.5px);
+    }
+
+    .back {
+        -webkit-transform: rotateX(90deg) rotateZ(180deg) rotateY(180deg) translateZ(22.5px);
+        -ms-transform: rotateX(90deg) rotateZ(180deg) rotateY(180deg) translateZ(22.5px);
+        transform: rotateX(90deg) rotateZ(180deg) rotateY(180deg) translateZ(22.5px);
+    } */
+
+    &:hover .flipper-flip3d-vertical2,
+    &:focus .flipper-flip3d-vertical2 {
+        transform: rotateX(90deg);
+    }
+}

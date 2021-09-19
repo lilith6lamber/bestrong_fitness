@@ -1,0 +1,19 @@
+#loadingScreen {
+    background-color: $carbon;
+    background-image: url("../img/icons/loader.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 500000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+    &.visible {
+        visibility: visible;
+        opacity: 1;
+    }
+}

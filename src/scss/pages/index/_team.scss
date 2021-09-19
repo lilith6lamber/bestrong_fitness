@@ -1,0 +1,107 @@
+.team {
+    padding-top: calc(191px / 2);
+    padding-bottom: calc(209px / 2);
+    &_subtitle {
+        margin: 53px auto 62px;
+    }
+    &_list {
+        margin-bottom: 40px;
+        &-item {
+            .wrapper {
+                box-shadow: 0px 3px 6px #00000029;
+                text-align: center;
+                height: 100%;
+                .text-content {
+                    padding: 30px 50px 38px;
+                    width: 100%;
+                    flex-grow: 2;
+                    .name {
+                        font-size: 22px;
+                        line-height: 22px;
+                    }
+                    .speciality {
+                        color: rgba($carbon, 0.8);
+                        font-size: 18px;
+                    }
+                }
+            }
+            &_socials {
+                margin-top: 12px;
+                .list-item {
+                    margin-right: 20px;
+                    &:last-of-type {
+                        margin-right: 0;
+                    }
+                    .facebook {
+                        color: #0739ff;
+                        &:hover,
+                        &:focus {
+                            text-shadow: 0 0 3px rgba(#0739ff, 0.5);
+                        }
+                    }
+                    .twitter {
+                        color: #00a2ff;
+                        &:hover,
+                        &:focus {
+                            text-shadow: 0 0 3px rgba(#00a2ff, 0.5);
+                        }
+                    }
+                    .instagram {
+                        color: #f933df;
+                        &:hover,
+                        &:focus {
+                            text-shadow: 0 0 3px rgba(#f933df, 0.5);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &_btn {
+        max-width: 383px;
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    .team {
+        padding-top: 191px;
+        padding-bottom: 209px;
+        &_list {
+            margin-bottom: 83px;
+            &-item {
+                .wrapper {
+                    .text-content {
+                        padding: 20px 15px 20px;
+                        .name {
+                            font-size: 18px;
+                        }
+                        .speciality {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .team {
+        &_list {
+            &-item {
+                .wrapper {
+                    .text-content {
+                        padding: 30px 15px 38px;
+                        .name {
+                            font-size: 34px;
+                            line-height: 34px;
+                        }
+                        .speciality {
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

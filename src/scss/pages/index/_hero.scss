@@ -1,0 +1,96 @@
+.hero {
+    background-color: #040509;
+    background-image: url("../img/bg/home_header--mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+    padding-top: calc(314px / 2);
+    padding-bottom: calc(224px / 2);
+    position: relative;
+    &_subtitle {
+        color: rgba(#fff, .7);
+        font-size: 16px;
+        line-height: 26px;
+    }
+    &_title {
+        text-transform: capitalize;
+        font-weight: 400;
+        margin-bottom: 30px;
+        font-size: 26px;
+        line-height: 26px;
+        color: #fff;
+    }
+    &_btn {
+        max-width: 300px;
+    }
+    &_socials {
+        position: absolute;
+        border: 1px solid $sky;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        top: 0;
+        left: 0;
+        margin-top: 5px;
+        &-link {
+            width: 25px;
+            height: 35px;
+            border-bottom: 1px solid $sky;
+            color: #040509;
+            background: #fff;
+            a:hover,
+            a:focus {
+                color: $sky;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    .hero {
+        background-image: url("../img/bg/home_header--tablet.jpg");
+        background-position-x: right;
+        padding-top: 224px;
+        padding-bottom: 224px;
+        &_subtitle {
+            font-size: 30px;
+            line-height: 30px;
+        }
+        &_title {
+            margin-bottom: 60px;
+            font-size: 45px;
+            line-height: 45px;
+        }
+        &_socials {
+            top: unset;
+            bottom: 0;
+            left: 0;
+            margin-top: unset;
+            margin-bottom: 33px;
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .hero {
+        background-image: url("../img/bg/home_header--desktop.jpg");
+    }
+}
+
+@media screen and (min-width: 1399.98px) {
+    .hero {
+        min-height: 100vh;
+        background-image: url("../img/bg/home_header--full.jpg");
+        padding-top: 314px;
+        &_title {
+            font-size: 75px;
+            line-height: 90px;
+        }
+        &_socials {
+            &-link {
+                width: 50px;
+                height: 75px;
+                font-size: 18px;
+            }
+        }
+    }
+}
